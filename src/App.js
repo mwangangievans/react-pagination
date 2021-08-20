@@ -1,6 +1,7 @@
 import React, {useState , useEffect} from 'react'
 import './App.css';
 import Post from './components/Post';
+import Pagination from './components/Pagination';
 
 const url = 'https://jsonplaceholder.typicode.com/posts';
 
@@ -22,7 +23,7 @@ const App = () => {
       {posts.length > 0 ? (
         <>
         <Pagination data ={posts}
-        RenderComponents={Post}
+        RenderComponent={Post}
         title="posts"
         pageLimit={5}
         dataLimit={10}/>
