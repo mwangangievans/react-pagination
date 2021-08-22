@@ -1,5 +1,6 @@
 const Post = (props) =>{
     const {id , title , body} = props.data ;
+    
     return(
         <div className="post">
             <small>{id}</small>
